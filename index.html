@@ -1,7 +1,16 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta name="snap-gaming-300-600" content="width=300,height=600" />
+		<script type="text/javascript">
+			var clickTag = "https://www.qualcomm.com/de/snapdragon#audio"
+		</script>
 		<style>
+			body,
+			html {
+				margin: 0;
+				padding: 0;
+			}
 			.sd-audio-300-600 {
 				width: 300px;
 				height: 600px;
@@ -58,7 +67,12 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 	</head>
 	<body>
-		<div class="sd-audio-300-600" width="300" height="600">
+		<a
+			href="javascript:window.open(window.clickTag)"
+			class="sd-audio-300-600"
+			width="300"
+			height="600"
+		>
 			<img
 				class="top-text"
 				src="https://assets.codepen.io/1253946/audio-300-600-top-text.png"
@@ -91,7 +105,7 @@
 				src="https://assets.codepen.io/1253946/audio-300-600-image.jpg"
 				alt=""
 			/>
-		</div>
+		</a>
 	</body>
 	<script>
 		const sdAudio300x600Animate = () => {
